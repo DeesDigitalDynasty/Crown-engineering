@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Crown Engineering Dredging Services</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: beige;
+      color: #000;
+    }
+
+    header {
+      background: #000;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 24px;
+      color: gold;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: gold;
+    }
+
+    .hamburger {
+      display: none;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .mobile-nav {
+      display: none;
+      flex-direction: column;
+      background: #000;
+      width: 100%;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      padding: 10px 0;
+    }
+
+    .mobile-nav a {
+      padding: 10px 20px;
+    }
+
+    .service-section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 2rem;
+      align-items: center;
+    }
+
+    .service-section:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .service-text {
+      flex: 1;
+      padding: 1rem;
+    }
+
+    .service-image {
+      flex: 1;
+      padding: 1rem;
+    }
+
+    .service-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+    }
+
+    .social-icons a {
+      color: white;
+      font-size: 1.5rem;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    .social-icons a:hover {
+      color: gold;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+      }
+
+      .hamburger {
+        display: block;
+        color: white;
+      }
+
+      .mobile-nav.show {
+        display: flex;
+      }
+
+      .service-section {
+        flex-direction: column !important;
+      }
+
+      header {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+    span{
+        font-weight: 700;
+        color: orange;
+        font-style: italic;
+    }
+  </style>
+  
+</head>
+
+<body>
+  <header>
+    <h1>Crown Engineering</h1>
+    <div class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+    <nav class="desktop-nav">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#team">Team</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#contact">Contact Us</a>
+    </nav>
+    <nav class="mobile-nav" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#team">Team</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#contact">Contact Us</a>
+    </nav>
+  </header>
+
+  <br>
+  <center><h1>Our Services</h1></center><br>
+  <center>At <span>Crown Engineering </span>, we deliver cutting-edge marine solutions with a blend of precision, innovation, and reliability. With years of expertise in marine engineering and a commitment to sustainable practices, our team is equipped to tackle even the most complex challenges beneath the surface. Whether it’s deep-water dredging, land reclamation, coastal protection, or marine construction, we specialize in shaping the seafloor and fortifying shorelines with safety and efficiency at the forefront.
+
+We understand that every marine environment is unique, and that’s why we approach each project with tailored strategies that ensure long-term success. Our fleet of modern equipment and experienced professionals work seamlessly together to execute operations with minimal disruption to the environment and surrounding communities. From clearing vital waterways for safer navigation to creating new land for future development, <span>Crown Engineering</span> is your trusted partner in transforming marine landscapes.
+
+When you choose Crown Engineering, you're not just hiring a contractor—you’re gaining a dedicated team committed to delivering quality results, on time and on budget. Let us move the earth for you—reliably, responsibly, and with the highest standards of excellence.</center>
+
+  <div class="service-section">
+    <div class="service-text">
+      <h2>Capital Dredging</h2>
+      <p><span>Crown Engineering</span> offers expert capital dredging solutions for the creation of new waterways, ports, and harbor expansions. This involves the initial excavation of seabeds or riverbeds to establish required depths and dimensions for infrastructure development. Our precision-focused approach ensures efficient project delivery while adhering to environmental and regulatory standards.</p>
+    </div>
+    <div class="service-image">
+      <img src="./img/Capital Dredging.jpg" alt="Capital Dredging">
+    </div>
+  </div>
+
+  <div class="service-section">
+    <div class="service-text">
+      <h2>Maintenance Dredging</h2>
+      <p>At <span>Crown Engineering</span>, we specialize in maintenance dredging services designed to keep waterways safe, functional, and efficient year-round. Our team routinely removes silt, sand, and debris from ports, harbors, and channels to ensure optimal navigational depth for marine traffic. This essential service not only minimizes the risk of vessel grounding but also supports continuous operations for commercial shipping, fishing, and offshore logistics. With precision equipment and experienced crews, we help our clients maintain critical access and protect valuable waterfront infrastructure.</p>
+    </div>
+    <div class="service-image">
+      <img src="./img/bob-bowie-O_XOJ2pYAow-unsplash (1).jpg" alt="Maintenance Dredging">
+    </div>
+  </div>
+
+  <div class="service-section">
+    <div class="service-text">
+      <h2>Land Reclamation</h2>
+      <p>Our land reclamation services are ideal for expanding usable land in coastal or waterfront areas. By strategically relocating dredged materials, we create stable foundations for residential, commercial, or industrial development. <span>Crown Engineering</span> ensures sustainable practices that maximize space without compromising environmental integrity.</p>
+    </div>
+    <div class="service-image">
+      <img src="./img/Land Reclaimation.jpg" alt="Land Reclamation">
+    </div>
+  </div>
+
+  <div class="service-section">
+    <div class="service-text">
+      <h2>Coastal Protection</h2>
+      <p>With rising sea levels and increasing coastal erosion, <span>Crown Engineering</span> delivers coastal protection systems that safeguard shorelines and assets. Our services include the construction of revetments, seawalls, and breakwaters designed to absorb wave energy and prevent land degradation, securing communities and ecosystems for the long term.</p>
+    </div>
+    <div class="service-image">
+      <img src="./img/Coastal Protection.jpg" alt="Coastal Protection">
+    </div>
+  </div>
+
+  <div class="service-section">
+    <div class="service-text">
+      <h2>Environmental Dredging</h2>
+      <p>We perform environmental dredging with the utmost care and responsibility, targeting the removal of contaminated sediments from water bodies. <span>Crown Engineering</span> combines specialized equipment and eco-sensitive methodologies to restore aquatic habitats, improve water quality, and support regulatory compliance.</p>
+    </div>
+    <div class="service-image">
+      <img src="./img/Environmental Dredging.jpg" alt="Environmental Dredging">
+    </div>
+  </div>
+
+  <div class="service-section">
+    <div class="service-text">
+      <h2>Marine Construction</h2>
+      <p><span>Crown Engineering</span>'s marine construction division delivers robust infrastructure projects, including jetties, piers, docks, and underwater foundations. With a commitment to durability and precision, we build structures that withstand harsh marine conditions while supporting industrial, transport, and recreational needs.</p>
+    </div>
+    <div class="service-image">
+      <img src="./img/Marine Construction.jpg" alt="Marine Construction">
+    </div>
+  </div>
+
+  <footer>
+    <div class="social-icons">
+      <a href="https://www.facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.youtube.com" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+    </div>
+    <p>&copy; 2025 <span>Crown Engineering</span> | Powered by Dayo's Digital Dynasty</p>
+  </footer>
+
+ <script>
+  function toggleMenu() {
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenu.classList.toggle('show');
+  }
+
+  // Close the menu when clicking outside of it
+  document.addEventListener('click', function (event) {
+    const mobileMenu = document.getElementById('mobileMenu');
+    const hamburger = document.querySelector('.hamburger');
+
+    const isClickInside = mobileMenu.contains(event.target) || hamburger.contains(event.target);
+
+    if (!isClickInside && mobileMenu.classList.contains('show')) {
+      mobileMenu.classList.remove('show');
+    }
+  });
+</script>
+
+</body>
+
+</html>
